@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 98vh;
+    background: linear-gradient(yellow, green);
+}
+
+.container {
+    /* background-image: url("bg.jpg");
+    height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    background-color: rgb(222, 222, 142);
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(red, yellow);
+    border-radius: 30%;
+    border: 2px solid purple;
+}
+
+.body {
+    background-color: purple;
+    border-radius: 30%;
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border-radius: 30%;
+}
+
+#scorebox {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#HiScore {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#Up {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 40%;
+}
+
+#Down {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 40%;
+}
+
+#left {
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 40%;
+}
+
+#right {
+    position: absolute;
+    top: 95px;
+    left: 90px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 40%;
+}
+
+@media screen and (max-width: 600px) {
+    #HiScore {
+        position: fixed;
+        top: 85vh;
+        right: 10px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    #scorebox {
+        position: fixed;
+        top: 80vh;
+        right: 10px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    /* #Up {
+        position: absolute;
+        top: 60vh;
+        left: 60px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    }
+    #Down {
+        position: absolute;
+        top: 70vh;
+        left: 40px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    }
+    #left {
+        position: absolute;
+        top: 65vh;
+        left: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    }
+    #right {
+        position: absolute;
+        top: 65vh;
+        left: 90px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    } */
+}
+
+@media screen and ( max-width: 1000px) {
+    #HiScore {
+        position: fixed;
+        top: 85vh;
+        right: 120px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    #scorebox {
+        position: fixed;
+        top: 80vh;
+        right: 120px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    #Up {
+        position: absolute;
+        top: 75vh;
+        left: 60px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    }
+    #Down {
+        position: absolute;
+        top: 85vh;
+        left: 40px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    }
+    #left {
+        position: absolute;
+        top: 80vh;
+        left: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    }
+    #right {
+        position: absolute;
+        top: 80vh;
+        left: 90px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #HiScore {
+        position: fixed;
+        top: 85vh;
+        right: 30px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    #scorebox {
+        position: fixed;
+        top: 80vh;
+        right: 30px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #Up {
+        position: absolute;
+        top: 55vh;
+        left: 60px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    }
+    #Down {
+        position: absolute;
+        top: 65vh;
+        left: 40px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    }
+    #left {
+        position: absolute;
+        top: 60vh;
+        left: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    }
+    #right {
+        position: absolute;
+        top: 60vh;
+        left: 90px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 40%;
+    }
+}
