@@ -66,6 +66,8 @@ function getengine() {
         snakearr = [
             { x: 13, y: 15 }
         ];
+         let Scorebox = document.getElementById("scorebox");
+        Scorebox.innerHTML = "Score: 0";
         let HiScore = document.getElementById('HiScore');
         if (hs <= score) {
               localStorage.removeItem("hs");
