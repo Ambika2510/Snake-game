@@ -13,6 +13,12 @@ let snakearr = [
 ]
 let score = 0;
 let hs = 0;
+if (localStorage.length > 0) {
+    let ht = JSON.parse(localStorage.getItem("hs"));
+    hs = ht;
+    let HiScore = document.getElementById('HiScore');
+    HiScore.innerHTML = "HiScore: " + hs
+}
 let food = {
     x: 13,
     y: 14
@@ -62,6 +68,8 @@ function getengine() {
         ];
         let HiScore = document.getElementById('HiScore');
         if (hs <= score) {
+              localStorage.removeItem("hs");
+            localStorage.setItem("hs", JSON.stringify(score));
             hs = score;
             HiScore.innerHTML = "HiScore: " + hs;
         }
